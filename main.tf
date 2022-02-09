@@ -221,6 +221,7 @@ module "codebuild" {
   image_repo_name                       = var.image_repo_name
   image_tag                             = var.image_tag
   github_token                          = var.github_oauth_token
+  github_token_type                     = "PLAINTEXT"
   environment_variables                 = var.environment_variables
   badge_enabled                         = var.badge_enabled
   cache_type                            = var.cache_type
